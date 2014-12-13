@@ -1,0 +1,160 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style type="text/css">
+		body
+		{
+			margin: 0;
+			padding: 0;
+			
+		}
+		.Container
+		{
+			width: 100%;
+			height: 100%;
+			background-image:url(./img/bgimg.jpg);
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+		}
+		
+		.header
+		{
+			width: 100%;
+			height: 100px;
+		}
+		#Title
+		{
+			width: 100%;
+			height: 100px;
+			font-size: 40px;
+			color: white;
+			font-family: Helvetica;
+			font-weight: bold;
+			text-align: center;
+			vertical-align: middle;
+
+		}
+		.table
+		{
+			margin: 0 auto;
+		}
+		.menu
+		{
+			width: 100%;
+			height: 40px;
+			text-align: center;
+			vertical-align: middle;
+			font-weight: bold;
+			
+
+		}
+		.menu ul
+		{
+			width: 80%;
+			height: 100%;
+			vertical-align: middle;
+			margin: 0 auto;
+		}
+		.menu ul li
+		{
+			width: 33%;
+			height: 100%;
+			
+			vertical-align: middle;
+			float: left;
+		}
+		.menu ul li a
+		{
+			text-decoration: none;
+		}
+		a:link { color: white; }
+		a:visited { color: white; }
+		a:hover { color: #DCDCDD; }
+		a:active { color: #DCDCDD; }
+		#main
+		{
+			
+			background-color: white;
+			opacity: 0.7;
+			width: 80%;
+			height: 300px;
+			margin: 0 auto;
+			
+		}
+		#sentense
+		{
+			color: black;
+			text-align: center;
+			vertical-align: middle;
+			font-size: 20px;
+			font-family: Helvetica;
+			margin-top:20px;
+			font-weight: bold;
+
+		}
+
+
+		</style>
+		<script type="text/JavaScript">
+		
+		function Go()
+		{
+			var Language;
+			
+			Language = parseInt(document.myForm.Pmethod.selectedIndex);
+			
+
+			if(Language == 0){
+				document.getElementById("about").innerHTML = "about";
+			document.getElementById("products").innerHTML = "products";
+			document.getElementById("contact").innerHTML = "contact";
+			document.getElementById("sentense").innerHTML = "Formally established in 2008, Beats Electronics (Beats) comprises the Beats by Dr. Dre"+"family of premium consumer headphones, earphones, and speakers as well as patented Beats Audio"+"  software technology and streaming music subscription service Beats Music. "+" Through these world class offerings, Beats has effectively brought the energy, emotion and excitement of playback"+"  in the recording studio to the listening experience and"+"has introduced an entirely new generation to the possibilities of premium sound entertainment.";
+			}else{
+			document.getElementById("about").innerHTML = "概要";
+			document.getElementById("products").innerHTML = "商品";
+			document.getElementById("contact").innerHTML = "連絡";
+			document.getElementById("sentense").innerHTML = "正式に2008年に設立され、電子（ビート）ビートと、ビートドクタードレー™による特許取得済みのプレミアム消費者のヘッドホン、イヤホン、スピーカーの家族だけでなく、オーディオビートソフトウェア技術とストリーミング音楽サブスクリプションサービスは、音楽に勝るものはありません。これらの世界クラスの製品·テクノロジーを通じて、ビーツ効果的なリスニング体験にレコーディングスタジオでのエネルギー、感情、再生の興奮をもたらした、プレミアムサウンドエンターテインメントの可能性に全く新しい世代を導入しています。";
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<div class="Container">
+		<div class="header">
+			<table class="table">
+				<form name="myForm">
+					<tr>
+						<td><select name ="Pmethod">
+							<option value ="English">English</option>
+							<option value ="Japanese">Japanese</option>
+						</td>
+						<td>
+							<input type ="button" value = " Go " onclick =" Go();">
+						</td>
+					</tr>
+				</form>
+			</table>
+		</div>
+		<div id ="Title">
+			Sample
+		</div>
+		<div class="menu">
+			<ul>
+				<a href="#"><li id="about">About us</li></a>
+				<a href="#"><li id="products">Products</li></a>
+				<a href="#"><li id="contact">Contact us</li></a>
+			</ul>
+		</div>
+		<div id="main">
+			<div id ="sentense">
+			Formally established in 2008, Beats Electronics (Beats) comprises the Beats by Dr. Dre family of premium consumer headphones, earphones, and speakers as well as patented Beats Audio software technology and streaming music subscription service Beats Music. Through these world class offerings, Beats has effectively brought the energy, emotion and excitement of playback in the recording studio to the listening experience and has introduced an entirely new generation to the possibilities of premium sound entertainment.
+		</div>
+		</div>
+
+		</div>
+
+	</body>
+</html>
