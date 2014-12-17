@@ -1,0 +1,19 @@
+#animeTarget{
+	background-color: #09C;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin-top:10px;
+	padding: 10px;
+}
+#animeButton {
+color: #FFF;
+text-align: center;
+width: 100px;
+height: 20px;
+background-color: #09C;
+padding: 10px;
+}
+div{
+	display: block;
+}
