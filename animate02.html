@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<stylesheet type="text/css">
+		<style>
+		div{
+			margin: 0 auto;
+			width:100px;
+			height:100px;
+			position:absolute;
+			left:10px;
+			top:50px;
+			background-color:blue;"
+		}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script> 
+			$(document).ready(function(){
+				$("button").click(function(){
+					var div = $("div");
+					startAnimation();
+					function startAnimation(){
+						div.animate({height:300},"slow");
+						div.animate({width:300},"slow");
+						div.css("background-color","grey");
+						div.animate({height:100},"slow");
+						div.animate({width:100},"slow",startAnimation);
+					}
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button>Start Animation</button>
+		<div></div>
+</div>
+	</body>
+</html>
